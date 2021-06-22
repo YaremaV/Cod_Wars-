@@ -43,12 +43,52 @@
 // console.log(smallEnough([80, 117, 115, 104, 45, 85, 112, 115], 120))
 
 
-function scramble(str1, str2) {
- return str1.length === str2.length
-}
-console.log(scramble('rkqodlw','world'));
-console.log(scramble('cedewaraaossoqqyt','codewars'));
-console.log(scramble('katas','steak'));
-console.log(scramble('scriptjava','javascript'));
-console.log(scramble('scriptingjava','javascript'));
-console.log(scramble('scriptsjava','javascripts'));
+// function scramble(str1, str2) {
+//  return str1.length === str2.length
+// }
+// console.log(scramble('rkqodlw','world'));
+// console.log(scramble('cedewaraaossoqqyt','codewars'));
+// console.log(scramble('katas','steak'));
+// console.log(scramble('scriptjava','javascript'));
+// console.log(scramble('scriptingjava','javascript'));
+// console.log(scramble('scriptsjava','javascripts'));
+
+
+// function expandedForm(num) {
+//   // Your code here
+//    return num.toString()
+//         .split("")
+//         .reverse()
+//         .map((a, i) => a * Math.pow(10, i))
+//         .filter(a => a > 0)
+//         .reverse()
+//         .join(" + ");
+// }
+// console.log(expandedForm(12));
+// console.log(expandedForm(42));
+// console.log(expandedForm(70304));
+
+// Sort the odd
+// function sortArray(array) {
+
+//     const odds = array
+//         .filter(x => x%2)
+//         .sort((a, b) => a - b);
+        
+//     return array
+//         .map(x => x%2 ? odds.shift() : x);
+ 
+// }
+// console.log(sortArray([5, 3, 2, 8, 1, 4]));
+// console.log(sortArray([5, 3, 1, 8, 0]));
+// console.log(sortArray([]));
+
+
+// Split Strings
+// function solution(str){
+   
+
+// }
+// console.log(solution("abcdef"));
+// console.log(solution("abcdefg"));
+console.log("ёжик"> "яблоко")
