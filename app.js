@@ -412,3 +412,36 @@
 // ];
 
 // alert(unique(values)); // Hare,Krishna,:-O
+
+var uniqueInOrder = function (iterable) {
+  //your code here - remember iterable can be a string or an array
+  // return iterable.split("").filter((v, i, a) => a.indexOf(v) === i);
+  return [...new Set(iterable)];
+};
+
+// console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+// console.log(uniqueInOrder("ABBCcAD"));
+// console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+// function rangeOfNumbers(startNum, endNum) {
+//   return startNum === endNum
+//     ? [startNum]
+//     : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+// }
+
+// function rangeOfNumbers(startNum, endNum) {
+//   return startNum === endNum
+//     ? [startNum]
+//     : [...rangeOfNumbers(startNum, endNum - 1), endNum];
+// }
+// console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(6, 9));
+// console.log(rangeOfNumbers(4, 4));
+
+function arrayDiff(a, b) {
+  return a.filter((item) => !b.includes(item));
+}
+
+console.log(arrayDiff([], [4, 5]));
+console.log(arrayDiff([1, 2, 2, 2, 3], [2]));
+console.log(arrayDiff([1, 2, 3], [1, 2]));
